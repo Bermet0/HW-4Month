@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Все книги</h1>
+<ul>
+    {% for i in post %}
+    <li>
+        <h2>{{i.book_name}}</h2>
+        <img src="{{i.book_image.url}}" alt="">
+        <p>{{i.book_description}}</p>
+        <p>{{i.book_price}}</p>
+        <p>{{i.book_author}}</p>
+        <p>{{i.book_created_at}}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
