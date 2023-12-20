@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% include 'movies/header.html'%}
+<div class="center-text">
+<h1 class="color-title">Подробнее об {{movie_id.title}}</h1>
 
-<h1>Подробнее об {{movie_id.title}}</h1>
-<img src="{{movie_id.movie_image.url}}" alt="">
-<p>{{movie_id.movie_description}}</p>
-<p>{{movie_id.movie_price}}</p>
-<p>{{movie_id.movie_author}}</p>
+<div class="center-block"><img src="{{movie_id.movie_image.url}}" alt="image-style"></div>
+
+<p class="style-desc">{{movie_id.movie_description}}</p>
+<p class="style-id">{{movie_id.movie_price}}</p>
+<p class="style-author">{{movie_id.movie_author}}</p>
 <a href="{{movie_id.movie_trailer}}">Перейти по ссылке</a>
-<p>{{movie_id.movie_created_at}}</p>
-
-</body>
-</html>
+<p class="style-created-at">{{movie_id.movie_created_at}}</p>
+</div>
+{% include 'movies/footer.html'%}
