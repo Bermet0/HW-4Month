@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Выберитье объект для удаления</h1>
+<ul>
+    {% for i in movie_delete %}
+    <li>
+        <h2>{{i.movie_tittle}}</h2>
+        <button><a href="/movie_drop/{{i.id}}/delete/">Удалить</a></button>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
