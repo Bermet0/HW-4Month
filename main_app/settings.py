@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'blog',
     'tv_shows',
     'parser_app',
+    'custom_users',
 
 ]
 

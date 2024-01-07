@@ -1,11 +1,11 @@
 from django import forms
 
 import parser_app.parser_litres
-from . import models
+from parser_app import models
 
 
 class ParserForm(forms.Form):
-    MEDIA_CHOICES = ("litres.ru", 'litres.ru')
+    MEDIA_CHOICES = (("litres.ru", 'litres.ru'),)
     media_type = forms.ChoiceField(choices=MEDIA_CHOICES)
 
     class Meta:
