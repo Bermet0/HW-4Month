@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'tv_shows',
     'parser_app',
     'custom_users',
+    'cloth',
 
 ]
 
